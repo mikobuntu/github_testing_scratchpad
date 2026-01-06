@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # 1. Prompt user for file paths
-read -p "Enter input file path (e.g., input.mp4): " INPUT_FILE
-read -p "Enter output file path (e.g., output.mp4): " OUTPUT_FILE
+read -e -p "Enter input file path (e.g., input.mp4): " INPUT_FILE
+read -e -p "Enter output file path (e.g., output.mp4): " OUTPUT_FILE
 
 # 2. Prompt user for fade durations (in seconds)
-read -p "Enter fade-in duration in seconds: " FADE_IN_DUR
-read -p "Enter fade-out duration in seconds: " FADE_OUT_DUR
+read -e -p "Enter fade-in duration in seconds: " FADE_IN_DUR
+read -e -p "Enter fade-out duration in seconds: " FADE_OUT_DUR
 
 # 3. Automatically get total duration of the input file
 # This uses ffprobe to find the exact length in seconds
